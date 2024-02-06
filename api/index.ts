@@ -7,7 +7,7 @@ export async function fetchCars(){
         params: { cylinders: "12" },
         headers: {
           "X-RapidAPI-Key":
-            "b763e51e22msh52360900243e680p16b481jsnabf01a0bf690",
+            `${process.env.RAPID_API_KEY}`,
           "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
         },
       };
